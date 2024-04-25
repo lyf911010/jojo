@@ -1,0 +1,25 @@
+{
+  "name": "@jojoui/ui",
+  "scripts": {
+    "build": "vite build",
+    "test": "echo test"
+  },
+  "main": "./dist/jojoui-ui.umd.js",
+  "module": "./dist/jojoui-ui.mjs",
+  "types": "",
+  "exports": {
+    ".": {
+      "require": "./dist/jojoui-ui.umd.js",
+      "module": "./dist/jojoui-ui.mjs",
+      "types": ""
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "@jojoui/button": "workspace:^",
+    "@jojoui/util": "workspace:^"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "jojo-ui",
+  "private": true,
+  "scripts": {
+    "build:ui": "pnpm --filter @jojoui/ui... run build"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "sass": "^1.75.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10"
+  },
+  "dependencies": {
+    "vue": "^3.4.25"
+  }
+}
