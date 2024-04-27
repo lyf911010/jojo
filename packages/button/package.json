@@ -7,12 +7,12 @@
   },
   "main": "./dist/jojoui-button.umd.js",
   "module": "./dist/jojoui-button.mjs",
-  "types": "",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/jojoui-button.umd.js",
       "module": "./dist/jojoui-button.mjs",
-      "types": ""
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [
