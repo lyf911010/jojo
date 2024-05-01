@@ -5,11 +5,11 @@ export default defineConfig({
     lib: {
       entry: './src/index.ts',
       name: 'JojouiUtil',
-      fileName: 'jojoui-util'
+      fileName: 'jojoui-util',
     },
     rollupOptions: {
       external: [/lodash.*/],
-    }
+    },
   },
-  minfy: false
-})
+  minfy: false,
+});

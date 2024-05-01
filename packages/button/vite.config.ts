@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
   plugins: [vue()],
@@ -7,14 +7,14 @@ export default defineConfig({
     lib: {
       entry: './src/index.ts',
       name: 'JojouiButton',
-      fileName: 'jojoui-button'
+      fileName: 'jojoui-button',
     },
     minify: false,
     rollupOptions: {
       external: [
         /@jojoui.*/,
-        'vue'
-      ]
-    }
-  }
-})
+        'vue',
+      ],
+    },
+  },
+});

@@ -2,10 +2,12 @@
 import { test } from '@jojoui/util';
 
 function clickHandler() {
-  test()
+  test();
 }
 </script>
 
 <template>
-  <button @click="clickHandler">123123123</button>
+  <button @click="clickHandler">
+    123123123
+  </button>
 </template>

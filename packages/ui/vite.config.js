@@ -5,13 +5,13 @@ export default defineConfig({
     lib: {
       entry: './src/index.ts',
       name: 'Jojoui/ui',
-      fileName: 'jojoui-ui'
+      fileName: 'jojoui-ui',
     },
     rollupOptions: {
       external: [
         /@jojoui.*/,
-        'vue'
-      ]
-    }
+        'vue',
+      ],
+    },
   },
-})
+});

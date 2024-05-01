@@ -3,7 +3,7 @@
 // import {
 //   Button,
 // } from '@jojoui/ui'
-import { Button } from '@jojoui/button'
+import { Button } from '@jojoui/button';
 </script>
 
 <template>
