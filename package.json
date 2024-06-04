@@ -2,7 +2,16 @@
   "name": "jojo",
   "private": true,
   "scripts": {
-    "hello": "echo 'hello world'"
+    "hello": "echo 'hello world'",
+    "build:ui": "pnpm --filter './packages/**' run build"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "sass": "^1.77.4",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.12"
+  },
+  "dependencies": {
+    "vue": "^3.4.27"
+  }
 }

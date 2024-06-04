@@ -1,0 +1,21 @@
+{
+  "name": "@jojo/ui",
+  "scripts": {
+    "build": "vite build"
+  },
+  "main": "./dist/jojo-ui.umd.js",
+  "module": "./dist/jojo-ui.mjs",
+  "types": "",
+  "exports": {
+    ".": {
+      "require": "./dist/jojo-ui.umd.js",
+      "module": "./dist/jojo-ui.mjs",
+      "types": ""
+    }
+  },
+  "dependencies": {
+    "@jojo/button": "workspace:^",
+    "@jojo/input": "workspace:^",
+    "@jojo/shared": "workspace:^"
+  }
+}
