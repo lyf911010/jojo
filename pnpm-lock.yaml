@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@types/lodash':
+        specifier: ^4.17.4
+        version: 4.17.4
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21
       vue:
         specifier: ^3.4.27
         version: 3.4.27(typescript@5.4.5)
@@ -24,6 +30,12 @@ importers:
       vite:
         specifier: ^5.2.12
         version: 5.2.12(sass@1.77.4)
+
+  demo:
+    dependencies:
+      '@jojo/ui':
+        specifier: workspace:^
+        version: link:../packages/ui
 
   docs: {}
 
@@ -570,6 +582,7 @@ packages:
     resolution: {integrity: sha512-WdOOppmUNU+IbZ0PaDiTst80zjnrOkyJNHoKupIcVyU8Lvla3Ugx94VzkQ32Ijqd7UhHJy75gNWDMUekcrSJ6g==}
     engines: {node: '>=12'}
     hasBin: true
+    requiresBuild: true
     optionalDependencies:
       '@esbuild/aix-ppc64': 0.20.2
       '@esbuild/android-arm': 0.20.2
