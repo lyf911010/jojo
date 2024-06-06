@@ -23,12 +23,12 @@
   },
   "main": "./dist/jojo-button.umd.js",
   "module": "./dist/jojo-button.mjs",
-  "types": "",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/jojo-button.umd.js",
       "module": "./dist/jojo-button.mjs",
-      "types": ""
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [

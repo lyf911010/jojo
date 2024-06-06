@@ -23,12 +23,12 @@
   },
   "main": "./dist/jojo-shared.umd.js",
   "module": "./dist/jojo-shared.mjs",
-  "types": "",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/jojo-shared.umd.js",
       "module": "./dist/jojo-shared.mjs",
-      "types": ""
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [

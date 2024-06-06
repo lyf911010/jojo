@@ -8,7 +8,7 @@ const props = withDefaults(defineProps<{
 })
 
 function handleClick(){
-    alert(hello(props.text))
+    console.log(hello(props.text))
 }
 </script>
 

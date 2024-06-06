@@ -2,14 +2,21 @@
   "name": "jojo",
   "private": true,
   "scripts": {
-    "hello": "echo 'hello world'",
-    "build:ui": "pnpm --filter './packages/**' run build"
+    "clean:type": "rimraf ./dist",
+    "type:node": "tsc -p tsconfig.node.json --noEmit --composite false",
+    "type:src": "pnpm run clean:type && vue-tsc -p tsconfig.src.json --composite false --declaration --emitDeclarationOnly",
+    "mv-type": "tsx ./scripts/dts-mv.ts",
+    "build:ui": "pnpm run type:src && pnpm --filter './packages/**' run build && pnpm run mv-type"
   },
   "devDependencies": {
+    "@types/node": "^20.14.2",
     "@vitejs/plugin-vue": "^5.0.5",
+    "rimraf": "^5.0.7",
     "sass": "^1.77.4",
+    "tsx": "^4.12.0",
     "typescript": "^5.4.5",
-    "vite": "^5.2.12"
+    "vite": "^5.2.12",
+    "vue-tsc": "^2.0.19"
   },
   "dependencies": {
     "@types/lodash": "^4.17.4",

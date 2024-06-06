@@ -5,12 +5,12 @@
   },
   "main": "./dist/jojo-ui.umd.js",
   "module": "./dist/jojo-ui.mjs",
-  "types": "",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/jojo-ui.umd.js",
       "module": "./dist/jojo-ui.mjs",
-      "types": ""
+      "types": "./dist/index.d.ts"
     }
   },
   "dependencies": {
