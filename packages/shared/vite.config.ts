@@ -1,15 +1,4 @@
-import { defineConfig } from 'vite'
+// packages/shared/vite.config.ts
+import { generateConfig } from '../build/build.config';
 
-export default defineConfig({
-  build: {
-    lib: {
-      entry:'./src/index.ts',
-      name: 'JojoShared',
-      fileName:'jojo-shared'
-    },
-    minify: false,
-    rollupOptions:{
-    external:[/lodash.*/]
-    }
-  }
-})
+export default generateConfig();

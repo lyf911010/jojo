@@ -1,15 +1,5 @@
-import { defineConfig } from 'vite'
+// packages/ui/vite.config.ts
+import { defineConfig } from 'vite';
+import { generateVueConfig } from '../build/build.config';
 
-export default defineConfig({
-  build: {
-    lib: {
-      entry:'./src/index.ts',
-      name: 'JojoUi',
-      fileName:'jojo-ui'
-    },
-    minify: false,
-    rollupOptions:{
-    external:[/lodash.*/, 'vue']
-    }
-  }
-})
+export default defineConfig(({ mode }) => generateVueConfig({ mode }));
