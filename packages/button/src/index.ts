@@ -1,5 +1,3 @@
-import JButton from './button.vue'
+import Button from './Button.vue';
 
-export {
-    JButton 
-}
+export { Button };

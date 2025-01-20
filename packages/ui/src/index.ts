@@ -1,3 +1,2 @@
-export * from '@jojo/button'
-export * from '@jojo/input'
-export * from '@jojo/shared'
+export * from '@jojoui/button';
+export * from '@jojoui/util';

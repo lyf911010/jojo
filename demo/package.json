@@ -1,10 +1,12 @@
 {
-  "name": "@jojo/demo",
+  "name": "@jojoui/demo",
   "private": true,
   "scripts": {
     "dev": "vite dev"
   },
   "dependencies": {
-    "@jojo/ui": "workspace:^"
+    "@jojoui/ui": "workspace:^"
+  },
+  "devDependencies": {
   }
 }

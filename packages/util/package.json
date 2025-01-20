@@ -1,0 +1,24 @@
+{
+  "name": "@jojoui/util",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "vite build",
+    "test": "echo test"
+  },
+  "main": "./dist/jojoui-util.umd.js",
+  "module": "./dist/jojoui-util.mjs",
+  "types": "",
+  "exports": {
+    ".": {
+      "require": "./dist/jojoui-util.umd.js",
+      "module": "./dist/jojoui-util.mjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

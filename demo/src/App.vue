@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import { JButton, JInput } from '@jojo/ui'
+// demo/src/App.vue
+// import {
+//   Button,
+// } from '@jojoui/ui'
+import { Button } from '@jojoui/button';
 </script>
+
 <template>
   <div>
-    <JButton>Jbutton</JButton>
-    <JInput />
+    <Button>1111</Button>
   </div>
 </template>

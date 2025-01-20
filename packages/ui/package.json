@@ -1,24 +1,25 @@
 {
-  "name": "@jojo/ui",
+  "name": "@jojoui/ui",
   "scripts": {
-    "build:package": "vite build --mode package",
-    "build:full": "vite build --mode full",
-    "build:full-min": "vite build --mode full-min",
-    "build": "pnpm run build:package && pnpm run build:full && pnpm run build:full-min"
+    "build": "vite build",
+    "test": "echo test"
   },
-  "main": "./dist/jojo-ui.umd.js",
-  "module": "./dist/jojo-ui.mjs",
-  "types": "./dist/src/index.d.ts",
+  "main": "./dist/jojoui-ui.umd.js",
+  "module": "./dist/jojoui-ui.mjs",
+  "types": "",
   "exports": {
     ".": {
-      "require": "./dist/jojo-ui.umd.js",
-      "import": "./dist/jojo-ui.mjs",
-      "types": "./dist/src/index.d.ts"
+      "require": "./dist/jojoui-ui.umd.js",
+      "module": "./dist/jojoui-ui.mjs",
+      "types": ""
     }
   },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "dependencies": {
-    "@jojo/button": "workspace:^",
-    "@jojo/input": "workspace:^",
-    "@jojo/shared": "workspace:^"
+    "@jojoui/button": "workspace:^",
+    "@jojoui/util": "workspace:^"
   }
 }

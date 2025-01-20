@@ -1,44 +1,25 @@
 {
-  "name": "@jojo/button",
-  "version": "0.0.0",
-  "description": "",
-  "keywords": [
-    "vue",
-    "ui",
-    "component library"
-  ],
-  "author": "OpenX",
-  "license": "MIT",
-  "homepage": "",
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "bugs": {
-    "url": ""
-  },
+  "name": "@jojoui/button",
+  "version": "0.0.1",
   "scripts": {
     "build": "vite build",
     "test": "echo test"
   },
-  "main": "./dist/jojo-button.umd.js",
-  "module": "./dist/jojo-button.mjs",
-  "types": "./dist/src/index.d.ts",
+  "main": "./dist/jojoui-button.umd.js",
+  "module": "./dist/jojoui-button.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/jojo-button.umd.js",
-      "import": "./dist/jojo-button.mjs",
-      "types": "./dist/src/index.d.ts"
+      "require": "./dist/jojoui-button.umd.js",
+      "module": "./dist/jojoui-button.mjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [
     "dist",
     "README.md"
   ],
-  "peerDependencies": {
-    "vue": ">=3.0.0"
-  },
   "dependencies": {
-    "@jojo/shared": "workspace:^"
+    "@jojoui/util": "workspace:^"
   }
 }
